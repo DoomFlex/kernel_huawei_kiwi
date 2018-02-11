@@ -15,7 +15,6 @@ KERNEL_DIR=$PWD
 IMAGE=$KERNEL_DIR/arch/arm64/boot/Image
 DTBTOOL=$KERNEL_DIR/scripts/dtbTool
 TOOLCHAIN=$ANDROID_DIR/crosstool/bin
-CCACHE_DIR="/home/matt/.ccache"
 
 #Paths
 OUT_DIR=$KERNEL_DIR/out
@@ -36,6 +35,7 @@ export CROSS_COMPILE=$TOOLCHAIN/aarch64-a53-linux-gnu-
 export ARCH=arm64
 export SUBARCH=arm64
 export USE_CCACHE=1
+export CCACHE_DIR="/home/matt/.ccache"
 export KBUILD_BUILD_USER="TheOTO"
 export KBUILD_BUILD_HOST="XDA-Developers"
 
